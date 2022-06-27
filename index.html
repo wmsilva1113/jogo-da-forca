@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="forca.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<title>Jogo da Forca</title>
+</head>
+<body>
+	<!-- Titulo do Jogo -->
+	<header>
+	 	<h1>Jogo da Forca</h1>
+	</header>
+
+
+	<!-- Dica da palavra -->
+	<div class="dica">
+		 <p>Dica: <span id='dicaPalavra'></span> </p>
+	</div>
+
+
+	<!-- desenho da forca -->
+ 	<div class="containerImage">
+		 <img id="morto" class="image" src="morto.png" alt="Img Forca">
+		 <img id="braco2" class="image" src="braco2.png" alt="Img Forca">
+		 <img id="braco1" class="image" src="braco1.png" alt="Img Forca">
+		 <img id="perna2" class="image" src="perna2.png" alt="Img Forca">
+		 <img id="perna1" class="image" src="perna1.png" alt="Img Forca">
+		 <img id="corpo1" class="image" src="corpo.png" alt="Img Forca">
+		 <img id="cabeca" class="image" src="cabeca.png" alt="Img Forca">
+		 <img id="forca" class="image" src="forca.png" alt="Img Forca">
+	</div>
+
+	
+	<!-- palavras e bases -->
+	<section class="containerLetras">
+		<div id="palavraSorteada0" class="letra"></div>
+		<div id="palavraSorteada1" class="letra"></div>
+		<div id="palavraSorteada2" class="letra"></div>
+		<div id="palavraSorteada3" class="letra"></div>
+		<div id="palavraSorteada4" class="letra"></div>
+		<div id="palavraSorteada5" class="letra"></div>
+		<div id="palavraSorteada6" class="letra"></div>
+		<div id="palavraSorteada7" class="letra"></div>
+		<div id="palavraSorteada8" class="letra"></div>
+		<div id="palavraSorteada9" class="letra"></div>
+	</section>
+
+	<section class="containerBase">
+		<div id="base0" class="base"></div>
+		<div id="base1" class="base"></div>
+		<div id="base2" class="base"></div>
+		<div id="base3" class="base"></div>
+		<div id="base4" class="base"></div>
+		<div id="base5" class="base"></div>
+		<div id="base6" class="base"></div>
+		<div id="base7" class="base"></div>
+		<div id="base8" class="base"></div>
+		<div id="base9" class="base"></div>
+	</section>
+	
+
+	<!-- Letras erradas -->
+		<div>
+		 	<p class="letrasErradasTitulo">Letras Erradas:</p>
+		 	<p id="letrasErradas" class="letrasErradas"></p>
+		</div>
+
+
+	<!-- Aviso Letra repetida -->
+	<div class="aviso-palavra-repetida">
+		
+	</div>
+
+
+	<nav class="popup-btn">
+		<!-- Botão reiniciar -->
+		<button onclick="reiniciar()" class="reiniciar">Reiniciar</button>
+
+
+		<!-- Botão Inserir nova Palavra -->
+		<button onclick="inserirNovaPalavra()" id="inserir" class="inserirPalavra">Inserir Palavra</button>
+
+
+		<!-- Botão Sair -->
+		<a href="sair.html">
+			<button  class="sair" >Sair</button>
+		</a>
+	</nav>
+
+
+	<!-- Botão reiniciar -->
+	<div id="containerPopup">
+	 	<p id="popup"></p>
+	 	<p id="nomePalavraMsgPopup"></p>
+	 	<button onclick="reiniciar()" id="reiniciar2" class="reiniciar">Reiniciar</button>
+	</div>
+
+
+
+
+
+	<!-- Rodapé dados do criador -->
+	<div class="rodape">
+		<footer>
+			<ul>
+				&copy;Wanderson Silva: Projeto Jogo da Forca
+			</ul>
+			<ul><a href="https://github.com/wmsilva1113">
+				GitHub: wmsilva1113
+				</a>
+			</ul>
+			<ul><a href="https://www.linkedin.com/in/wanderson-silva-8746a0231/">
+				Linkedin: wanderson-silva-8746a0231
+				</a>
+			</ul>
+		</footer>
+	</div>
+
+	<script src="forca.js"></script>
+</body>
+</html>
